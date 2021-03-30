@@ -14,6 +14,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func pushToFlutterVc(_ sender: Any) {
+        
+        navigationController?.pushViewController(FlutterMessageHelper.shared.flutterViewController, animated: true)
+        
+        let dictionary = ["methodName": "onGetServiceNumber","arguments":"1111111"]
+        
+        if let jsonString = dictionary.jsonString() {
+            FlutterMessageHelper.shared.sendMessageToFlutter(message: jsonString)
+        }
+        
+    }
+    
 }
 

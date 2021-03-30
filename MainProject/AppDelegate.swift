@@ -14,6 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // 注册与Flutter的通信
+        FlutterMessageHelper.shared.load(methodChannel: FlutterBridgeConst.MethodChannel, eventChannel: FlutterBridgeConst.EventChannel, messageChannel: FlutterBridgeConst.BasicMessageChannel)
+        
         return true
     }
 

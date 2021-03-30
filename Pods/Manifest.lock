@@ -1,0 +1,42 @@
+PODS:
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+    - package_info
+    - url_launcher
+  - package_info (0.0.1):
+    - Flutter
+  - shoufubei_about (0.0.1):
+    - Flutter
+  - url_launcher (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `flutter_module/shoufubei_about/.ios/Flutter/engine`)
+  - FlutterPluginRegistrant (from `flutter_module/shoufubei_about/.ios/Flutter/FlutterPluginRegistrant`)
+  - package_info (from `flutter_module/shoufubei_about/.ios/.symlinks/plugins/package_info/ios`)
+  - shoufubei_about (from `flutter_module/shoufubei_about/.ios/Flutter`)
+  - url_launcher (from `flutter_module/shoufubei_about/.ios/.symlinks/plugins/url_launcher/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: flutter_module/shoufubei_about/.ios/Flutter/engine
+  FlutterPluginRegistrant:
+    :path: flutter_module/shoufubei_about/.ios/Flutter/FlutterPluginRegistrant
+  package_info:
+    :path: flutter_module/shoufubei_about/.ios/.symlinks/plugins/package_info/ios
+  shoufubei_about:
+    :path: flutter_module/shoufubei_about/.ios/Flutter
+  url_launcher:
+    :path: flutter_module/shoufubei_about/.ios/.symlinks/plugins/url_launcher/ios
+
+SPEC CHECKSUMS:
+  Flutter: ac41d61a47ae5bf8195a5598d2d63754888ec0d5
+  FlutterPluginRegistrant: e51349d162690019734d4609176534e1930040f1
+  package_info: 873975fc26034f0b863a300ad47e7f1ac6c7ec62
+  shoufubei_about: 917507111d44e18233d0f1218ed78f22cc07bd4f
+  url_launcher: 6fef411d543ceb26efce54b05a0a40bfd74cbbef
+
+PODFILE CHECKSUM: e231ebd536730713699ddfd1b4e97ff7839e9017
+
+COCOAPODS: 1.10.1

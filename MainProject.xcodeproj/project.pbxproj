@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F0414250C724713709AD9DE /* Pods_MainProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91A2D77C9B5BA0D70C9FFA6 /* Pods_MainProject.framework */; };
 		C8AEFCA426132930009FBBBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AEFCA326132930009FBBBB /* AppDelegate.swift */; };
 		C8AEFCA626132930009FBBBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AEFCA526132930009FBBBB /* SceneDelegate.swift */; };
 		C8AEFCA826132930009FBBBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AEFCA726132930009FBBBB /* ViewController.swift */; };
 		C8AEFCAB26132930009FBBBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AEFCA926132930009FBBBB /* Main.storyboard */; };
 		C8AEFCAD26132931009FBBBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8AEFCAC26132931009FBBBB /* Assets.xcassets */; };
 		C8AEFCB026132931009FBBBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AEFCAE26132931009FBBBB /* LaunchScreen.storyboard */; };
+		C8AEFCBC261329C4009FBBBB /* FlutterMessageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AEFCBB261329C4009FBBBB /* FlutterMessageHelper.swift */; };
+		C8AEFCC626132B02009FBBBB /* DictonaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AEFCC526132B02009FBBBB /* DictonaryExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		738E0751AC91C00372DC233B /* Pods-MainProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainProject.debug.xcconfig"; path = "Target Support Files/Pods-MainProject/Pods-MainProject.debug.xcconfig"; sourceTree = "<group>"; };
+		B91A2D77C9B5BA0D70C9FFA6 /* Pods_MainProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MainProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8AEFCA026132930009FBBBB /* MainProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8AEFCA326132930009FBBBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8AEFCA526132930009FBBBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		C8AEFCAC26132931009FBBBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8AEFCAF26132931009FBBBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8AEFCB126132931009FBBBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8AEFCBB261329C4009FBBBB /* FlutterMessageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlutterMessageHelper.swift; sourceTree = "<group>"; };
+		C8AEFCC526132B02009FBBBB /* DictonaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictonaryExtensions.swift; sourceTree = "<group>"; };
+		EF19CB7C5578103AB831F49E /* Pods-MainProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MainProject.release.xcconfig"; path = "Target Support Files/Pods-MainProject/Pods-MainProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F0414250C724713709AD9DE /* Pods_MainProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		690E642CDB6A6F396FE8CFF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				738E0751AC91C00372DC233B /* Pods-MainProject.debug.xcconfig */,
+				EF19CB7C5578103AB831F49E /* Pods-MainProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A3585296733CC7DE70859799 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B91A2D77C9B5BA0D70C9FFA6 /* Pods_MainProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C8AEFC9726132930009FBBBB = {
 			isa = PBXGroup;
 			children = (
 				C8AEFCA226132930009FBBBB /* MainProject */,
 				C8AEFCA126132930009FBBBB /* Products */,
+				690E642CDB6A6F396FE8CFF7 /* Pods */,
+				A3585296733CC7DE70859799 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,8 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				C8AEFCA326132930009FBBBB /* AppDelegate.swift */,
+				C8AEFCBB261329C4009FBBBB /* FlutterMessageHelper.swift */,
 				C8AEFCA526132930009FBBBB /* SceneDelegate.swift */,
 				C8AEFCA726132930009FBBBB /* ViewController.swift */,
+				C8AEFCC526132B02009FBBBB /* DictonaryExtensions.swift */,
 				C8AEFCA926132930009FBBBB /* Main.storyboard */,
 				C8AEFCAC26132931009FBBBB /* Assets.xcassets */,
 				C8AEFCAE26132931009FBBBB /* LaunchScreen.storyboard */,
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8AEFCB426132931009FBBBB /* Build configuration list for PBXNativeTarget "MainProject" */;
 			buildPhases = (
+				61EFBC9BDE4943B1DA14F85D /* [CP] Check Pods Manifest.lock */,
+				7814266495A4CF69387B1641 /* [CP-User] Run Flutter Build shoufubei_about Script */,
 				C8AEFC9C26132930009FBBBB /* Sources */,
 				C8AEFC9D26132930009FBBBB /* Frameworks */,
 				C8AEFC9E26132930009FBBBB /* Resources */,
+				2CDEB8BBE39E6432B777199D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,11 +165,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CDEB8BBE39E6432B777199D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MainProject/Pods-MainProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MainProject/Pods-MainProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MainProject/Pods-MainProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61EFBC9BDE4943B1DA14F85D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MainProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7814266495A4CF69387B1641 /* [CP-User] Run Flutter Build shoufubei_about Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build shoufubei_about Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/flutter_module/shoufubei_about/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C8AEFC9C26132930009FBBBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8AEFCBC261329C4009FBBBB /* FlutterMessageHelper.swift in Sources */,
+				C8AEFCC626132B02009FBBBB /* DictonaryExtensions.swift in Sources */,
 				C8AEFCA826132930009FBBBB /* ViewController.swift in Sources */,
 				C8AEFCA426132930009FBBBB /* AppDelegate.swift in Sources */,
 				C8AEFCA626132930009FBBBB /* SceneDelegate.swift in Sources */,
@@ -283,6 +370,7 @@
 		};
 		C8AEFCB526132931009FBBBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 738E0751AC91C00372DC233B /* Pods-MainProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +390,7 @@
 		};
 		C8AEFCB626132931009FBBBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF19CB7C5578103AB831F49E /* Pods-MainProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
