@@ -1,7 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-@flutter_application_path = './flutter_module/shoufubei_about'
+@flutter_application_path = './flutter_module/about_page'
 
 def flutter_source_project_embased_function()
   load File.join(@flutter_application_path, ‘.ios’, ‘Flutter’, ‘podhelper.rb’)

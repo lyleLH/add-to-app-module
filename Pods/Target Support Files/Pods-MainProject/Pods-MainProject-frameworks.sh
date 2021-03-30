@@ -175,14 +175,14 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${PODS_ROOT}/../flutter_module/about_page/.ios/Flutter/App.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/package_info/package_info.framework"
-  install_framework "${PODS_ROOT}/../flutter_module/shoufubei_about/.ios/Flutter/App.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/url_launcher/url_launcher.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter/Flutter.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${PODS_ROOT}/../flutter_module/about_page/.ios/Flutter/App.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/package_info/package_info.framework"
-  install_framework "${PODS_ROOT}/../flutter_module/shoufubei_about/.ios/Flutter/App.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/url_launcher/url_launcher.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter/Flutter.framework"
 fi
